@@ -24,6 +24,8 @@
               <figure><img src="images/swiper/bg1.jpg" alt="asdasd"></figure>
               <div class="wrapper">
 
+              <div class="flex_con">
+
               
               <div class="bnr_info">
                 <h2>Slogan <span>Here</span></h2>
@@ -33,13 +35,17 @@
                   noticeably shorter and the temperature cools considerably.</p>
                 <button class="read-btn">Read More</button>
               </div>
-              
+               <figure class="tilt"><img src="images/swiper/bg1.jpg" alt="asdasd"></figure>
+              </div>
+            </div>
+            </div>
 
-            </div>
-            </div>
             <div class="swiper-slide">
-              <figure><img src="images/swiper/bg2.jpg" alt="asdasd"></figure>
+              <figure ><img src="images/swiper/bg2.jpg" alt="asdasd"></figure>
               <div class="wrapper">
+                <div class="flex_con">
+
+                
               <div class="bnr_info">
                 <h2>Slogan <span>Here</span></h2>
                 <p>Winter is the coldest season of the year in polar and temperate zones. It occurs
@@ -48,11 +54,16 @@
                   dates as the start of winter, and some use a definition based on weather.</p>
                 <button class="read-btn">Read More</button>
               </div>
+              <figure class="tilt"><img src="images/swiper/bg2.jpg" alt="asdasd"></figure>
+
+             </div>
             </div>
             </div>
             <div class="swiper-slide">
               <figure><img src="images/swiper/bg3.jpg" alt="asdasd"></figure>
               <div class="wrapper">
+                <div class="flex_con">
+
               <div class="bnr_info">
                 <h2>Slogan <span>Here</span></h2>
                 <p>Summer is the hottest of the four temperate seasons, occurring after spring and
@@ -61,11 +72,15 @@
                   length decreasing as the season progresses after the solstice.</p>
                 <button class="read-btn">Read More</button>
               </div>
+                <figure  class="tilt"><img src="images/swiper/bg3.jpg" alt="asdasd"></figure>
+              </div>
             </div>
             </div>
             <div class="swiper-slide">
               <figure><img src="images/swiper/bg4.jpg" alt="asdasd"></figure>
               <div class="wrapper">
+                <div class="flex_con">
+
               <div class="bnr_info">
                 <h2>Slogan <span>Here</span></h2>
                 <p>Spring, also known as springtime, is one of the four temperate seasons, succeeding
@@ -75,11 +90,34 @@
                   vice versa.</p>
                 <button class="read-btn">Read More</button>
               </div>
+                 <figure  class="tilt"><img src="images/swiper/bg4.jpg" alt="asdasd"></figure>
+              </div>
             </div>
             </div>
+
  <div class="swiper-slide">
               <figure><img src="images/swiper/bg5.jpg" alt="asdasd"></figure>
               <div class="wrapper">
+
+                 <div class="flex_con">
+              <div class="bnr_info">
+                <h2>Slogan <span>Here</span></h2>
+                <p>Autumn, also known as fall in North American English, is one of the four temperate
+                  seasons. Outside the tropics, autumn marks the transition from summer to winter,
+                  in September or March. Autumn is the season when the duration of daylight becomes 
+                  noticeably shorter and the temperature cools considerably.</p>
+                <button class="read-btn">Read More</button>
+              </div>
+              <figure  class="tilt"><img src="images/swiper/bg5.jpg" alt="asdasd"></figure>
+              </div>
+
+            </div>
+            </div>
+            <div class="swiper-slide">
+              <figure><img src="images/swiper/bg6.jpg" alt="asdasd"></figure>
+              <div class="wrapper">
+
+              <div class="flex_con">
 
               
               <div class="bnr_info">
@@ -90,20 +128,7 @@
                   noticeably shorter and the temperature cools considerably.</p>
                 <button class="read-btn">Read More</button>
               </div>
-            </div>
-            </div>
-            <div class="swiper-slide">
-              <figure><img src="images/swiper/bg6.jpg" alt="asdasd"></figure>
-              <div class="wrapper">
-
-              
-              <div class="bnr_info">
-                <h2>Slogan <span>Here</span></h2>
-                <p>Autumn, also known as fall in North American English, is one of the four temperate
-                  seasons. Outside the tropics, autumn marks the transition from summer to winter,
-                  in September or March. Autumn is the season when the duration of daylight becomes 
-                  noticeably shorter and the temperature cools considerably.</p>
-                <button class="read-btn">Read More</button>
+              <figure class="tilt"><img src="images/swiper/bg6.jpg" alt="asdasd"></figure>
               </div>
             </div>
             </div>
@@ -143,10 +168,21 @@
 
 
 
-
 <script src="js/swiper-bundle.min.js"></script>
+<script src="js/tilt.min.js"></script>
 <script src="js/jquery-3.6.1.min.js"></script>
   <script src="js/main.min.js"></script>
+
+  
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".tilt"), {
+		max: 5,
+		speed: 100
+	});
+	
+	//It also supports NodeList
+	// VanillaTilt.init(document.querySelectorAll(".tilt"));
+</script>
 </body>
 
 </html>
