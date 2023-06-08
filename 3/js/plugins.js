@@ -1,5 +1,27 @@
 $(document).ready(function(){
 
+
+
+	var cursor = $('#cursor');
+	var cursor_border = $('#cursor_border');
+
+	$(document).mousemove(function(ea){
+
+		
+		var x = ea.clientX;
+		var y = ea.clientY;
+		cursor.css("left",x+'px');
+		cursor.css("top",y+'px');
+		
+		cursor_border.css("left",x+'px');
+		cursor_border.css("top",y+'px');
+
+
+
+	});
+
+
+
 	// Global Variables
 
 		var toggle_primary_button = $('.nav_toggle_button'),

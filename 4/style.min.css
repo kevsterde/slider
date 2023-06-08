@@ -1,0 +1,1 @@
+.img_con{user-select:none;display:flex;gap:20px;justify-content:center;position:absolute;top:50%;left:50%;transform:translate(0,-50%)}.img_con figure{margin:0;height:500px;width:300px;overflow:hidden}.img_con figure img{height:100%;object-fit:cover;object-position:100% 50%;width:100%}body{height:100vh;position:relative}
