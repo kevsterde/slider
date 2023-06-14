@@ -105,6 +105,7 @@ a:focus { outline: none; }
 /*================================================ end preset ================================================================================*/
 
 
+html{cursor: none;}
 
 body::before { position: absolute; /*! content: url("screenshot.png"); */ left: 0; top: 0; right: 0; opacity: .5; } 
 small { line-height: 100%; margin-bottom: 0; } 
@@ -289,12 +290,13 @@ header { padding:0 10px; background: var(--color1); }
 @keyframes animate{ 0%{background-position-x:0 ;} 100%{background-position-x:1000px ;} }
 @keyframes animate2{ 0%{background-position-x:0 ;} 100%{background-position-x:-1000px ;} }
 
-#cursor{width: 20px;
+#cursor{width: 15px;
     box-shadow: 0 0 20px var(--color2), 0 0 60px #5ac5c2d6, 0 0 100px #5ac5c2c7;
     
-    aspect-ratio: 1; background: var(--color2); z-index: 999; pointer-events: none; position: fixed; border-radius: 50%; transform: translate(-50%,-50%);}
+    aspect-ratio: 1 /1; background: var(--color2); z-index: 999; pointer-events: none; position: fixed; border-radius: 50%; transform: translate(-50%,-50%);}
 
 
+    #cursor_border{position: fixed; width: 30px; aspect-ratio: 1 /1; z-index: 998; border: 2px solid var(--color2);border-radius: 50%; transform: translate(-50%,-50%); transition: .1s ease;}
 /*end banner*/
 
 /*middle*/
