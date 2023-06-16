@@ -10,7 +10,7 @@
 --color1: #1099fe; 
 --color2: #01bf84; 
 --color3: #fba017; 
-
+--color4: #fb1717; 
  } 
 
 
@@ -39,18 +39,24 @@ h2 { font-family: var(--txt2); line-height: 100%; }
 
 
 #banner { position: relative;} 
-#banner:before{content:url(images/icons/bnr.png);position: absolute;bottom: -6px;left: 50%;z-index: 1;transform: translateX(-50%);}
+
 #banner .airplane {position: absolute;bottom: 11px;right: 9.4%;z-index: 2;}
 
 .bnr_con { min-height:0; padding:0; } 
 .box_skitter { display: block; } 
 .box_skitter .prev_button,.box_skitter .next_button { pointer-events: auto; } 
 .rslides { display: none; } 
-.slider { width:1920px; left: 50%; position: relative; transform: translateX(-50%); height: 990px; background: linear-gradient(45deg,#d2001a,#7462ff,#f48e21,#23d5ab); background-size: 300% 300%; animation: color 12s ease-in-out infinite alternate;} 
-@keyframes color { 0%{ background-position: 0 50%; } 100%{ background-position: 100% 50%; } }
+.slider { width:1920px; left: 50%; position: relative; transform: translateX(-50%); height: 990px;} 
+.slider:before{content:'';position: absolute;inset: 0;backdrop-filter: blur(80px);z-index: 1;}
+.blob{position: absolute;outline: 1px dashed red;border-radius: 50%; animation: gradient 4s infinite;}
+.blob1{width: 56%;height: 51%;left: -200px;top: -100px;background: var(--color1); animation-delay: 1s;}
+.blob2{width: 76%;height: 69%;right: -200px;top: -100px;background: var(--color2); animation-delay: .2s;}
+.blob3{width: 62%;height: 83%;left: -200px;bottom: -100px;background: var(--color3); animation-delay: 2s;}
+.blob4{width: 80%;height: 71%;right: -200px;bottom: -100px;background: var(--color4); animation-delay: 5s;}
+.blob5{width: 40%;aspect-ratio: 1 / 1;background: #440baf; animation-delay: 5s;left: 50%;top: 50%;transform: translate(-50%,-50%);animation: gradient2 4s infinite alternate; transform-origin: 0 0;}
 
-    
-
+@keyframes gradient { 70%{ transform: scale(1.3) translate(50px); } }
+@keyframes gradient2 { 70%{ transform: scale(0.5) translate(-50%,-50%); } }
 
 
 .slider a { pointer-events: none; } 
